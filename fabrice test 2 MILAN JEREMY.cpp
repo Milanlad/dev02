@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/time.h>
 
-//Déclaration des varibales
+//DÃ©claration des varibales
 int valCapteur[8] = {2,56,180,60,10,1020,65,55};
 int i, j, tampon,somme = 0;
 float moyenne = 0.00;
@@ -38,24 +38,18 @@ i=0;
 //Calcule la moyenne
 void do_average ()
 {
-i=0;
-while (i!=8)
+while (i!= 6)
 	{
+	somme = somme + valCapteur[i];
 	i++;
 	}
-	i=2;
-	while (i!= 6)
-		{
-		somme = somme + valCapteur[i];
-		i++;
-		}
 moyenne = somme / 4;
 }
 
 //main du programme
 int main(void)
 {
-gettimeofday(&debutCalcul,NULL);// démare le timer pour le calcule
+gettimeofday(&debutCalcul,NULL);// dÃ©mare le timer pour le calcule
 
 sorting_valCapteur();//tri le tableau dans l'ordre croisant
 
