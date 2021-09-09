@@ -23,14 +23,14 @@ void sorting_valCapteur ()
 {
 for (i=1 ; i <= 8-1; i++) 
 	{
-    j = i;
-    while (j > 0 && valCapteur[j-1] > valCapteur[j]) 
+        j = i;
+        while (j > 0 && valCapteur[j-1] > valCapteur[j]) 
 		{
-      tampon = valCapteur[j];
-      valCapteur[j] = valCapteur[j-1];
-      valCapteur[j-1] = tampon;
-      j--;
-    	}
+      		tampon = valCapteur[j];
+      		valCapteur[j] = valCapteur[j-1];
+      		valCapteur[j-1] = tampon;
+      		j--;
+    		}
   	}
 i=0;
 }
